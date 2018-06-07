@@ -9,18 +9,26 @@
 
   <center><p>Cards</p></center>
   
-   
+  <center><div id="cardButton" ><p id="cardText"></p></div></center>
+
+  <center><p>
+      <input type="button" id="prevCard" value="previous card" onclick="cardsHandle.cardMove(-1);"/>
+      <span id="positionIndex">0/0</span>
+      <input type="button" id="nextCard" value="next card" onclick="cardsHandle.cardMove(1);"/>
+  </p></center>
+  
+   <div id="newCards">
   <center>
       <p>Add a New Card</p>
       Front:<input type="text" id="newFront" name="front"/>
       Back: <input type="text" id="newBack" name="back"/>
       <input value="Add" type="button" onclick="userEnter();"/>
   </center>
+  </div>
 
 
-</body>
+  
+  <script src="main.js"></script>
 
-<scipt src="main.js">
-</scipt>
-
+  </body>
 </html>
